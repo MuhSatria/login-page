@@ -1,0 +1,33 @@
+body {
+  font: {
+    family: 'Inter', sans-serif;
+    size: 16px;
+  };
+}
+
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  transition: all .5s ease-in-out;
+  &.show-overlay {
+      visibility: visible;
+      opacity: 1;
+  }
+}
+
+.section-or {
+  display: flex;
+  align-items: center;
+  
+  .line {
+    border-bottom: 1px solid #d4d4d4;
+    width: 80px;
+  }
+}
